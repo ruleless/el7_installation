@@ -58,4 +58,4 @@ show_t:
 	iptables -t filter -L -n
 
 save:
-	/etc/init.d/iptables save
+	iptables-save

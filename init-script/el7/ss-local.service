@@ -1,0 +1,17 @@
+[Unit]
+Description=client of shadowsocks
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/ss-server.pid
+Restart=always
+RestartSec=5
+#ExecStartPre=
+ExecStart=/usr/local/bin/ss-local -c /etc/ss-local.json -f /var/run/ss-local.pid
+#ExecReload=
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
