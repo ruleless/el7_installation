@@ -4,7 +4,7 @@ After=syslog.target network.target remote-fs.target nss-lookup.target
 
 [Service]
 Type=forking
-PIDFile=/var/run/ss-server.pid
+PIDFile=/var/run/ss-local.pid
 Restart=always
 RestartSec=5
 #ExecStartPre=
