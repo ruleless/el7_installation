@@ -58,4 +58,4 @@ show_t:
 	iptables -t filter -L -n
 
 save:
-	iptables-save
+	/usr/libexec/iptables/iptables.init save
