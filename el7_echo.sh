@@ -6,6 +6,7 @@ echo 'test connection with github: ssh -T git@github.com'
 
 echo
 echo 'you should build the following software from source:
+  emacs 26.2:        https://ftp.gnu.org/gnu/emacs/
   global-6.5:        https://ftp.gnu.org/pub/gnu/global/
   libevent2.x:       https://github.com/nmathewson/Libevent/releases)
   node-v8.2.0:       https://nodejs.org/en/download/releases/)

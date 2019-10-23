@@ -17,3 +17,5 @@ yum install -y samba
 yum install -y pcre-devel openssl openssl-devel
 yum install -y boost
 yum install -y boost-devel
+yum install -y gnutls
+yum install -y gnutls-devel
