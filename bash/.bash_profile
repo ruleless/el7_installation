@@ -6,11 +6,9 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-PATH=$PATH:$HOME/bin:/home/liuy/.rvm/bin:.
+PATH=$PATH:$HOME/bin:.
 export PATH
 
 # ssh start
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
-
-source /home/liuy/.rvm/scripts/rvm
