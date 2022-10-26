@@ -6,8 +6,11 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-PATH=$PATH:$HOME/bin:.
+PATH=/usr/local/go/bin:$HOME/go/bin:$HOME/bin:$PATH:.
 export PATH
+
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn,direct
 
 # ssh start
 eval $(ssh-agent -s)
